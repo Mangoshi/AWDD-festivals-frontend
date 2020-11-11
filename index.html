@@ -65,7 +65,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="mx-auto order-0">
+            <div class="mx-auto order-0 navBrand">
                 <a href="#" class="navbar-brand"><img src="img/vinyl.png" style="padding-right: 10px; padding-bottom: 2px;"><strong class="lato-light">BassFace.Hz</strong></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
                     <span class="navbar-toggler-icon"></span>
@@ -84,22 +84,22 @@
         </nav>
     </header>
     <main role="main">
-        <section class="jumbotron myJumbotron mt-5 d-none d-lg-block">
+        <section class="jumbotron myJumbotron mt-5">
             <div class="container-fluid myFluidContainer">
                 <div class="row">
                     <div class="col-lg-8 col-md-12 col-sm-12">
-                        <h1 class="lato-regular heroText d-none d-lg-block">The <span class="lato-bold">Bass</span><br>In your <span class="lato-bold">Face</span></h1>
+                        <h1 class="lato-regular heroText d-none d-xl-block">The <span class="lato-bold">Bass</span><br>In your <span class="lato-bold">Face</span></h1>
                         <div class="myHeroMask">
                             <div class="myHero"></div>
                         </div>
                     </div>
-                    <div class="col-lg-4 d-none d-lg-block">
+                    <div class="col-lg-4 col-sm-12 d-none d-lg-block">
                         <img class="turntableArm" src="img/arm.png">
                         <div class="card heroCardBG d-flex">
                             <div class="heroCard d-flex flex-column justify-content-center">
                                 <p class="lead lato-bold text-center heroCardText">You wanna feel that <span class="heroCardTextHighlight">rumble?</span></p>
                                 <img src="img/bigVinyl.png" class="vinylHero align-self-center">
-                                <a href="#" class="btn btn-primary redButton">Festivals</a>
+                                <a href="#festivalBrowser" class="btn btn-primary redButton">Festivals</a>
                                 <a href="#" class="btn btn-secondary greyButton">UI Kit Page</a>
                             </div>
                         </div>
@@ -258,7 +258,7 @@
                         </div>
                     </div>
                 </div>
-                <h2 class="rowHeading">Festival Browser</h2>
+                <h2 class="rowHeading" id="festivalBrowser">Festival Browser</h2>
                 <div class="row">
                     <div class="container-fluid">
                         <table class="table table-hover">
@@ -320,6 +320,7 @@
                 </div>
             </div>
         </div>
+        <button onclick="topFunction()" id="toTopBtn" title="Go Back To Top">Back To Top &#9757;</button>
     </main>
     <footer class="page-footer font-small blue pt-4 bg-dark">
         <div class="container-fluid text-center text-md-left text-light">
@@ -365,6 +366,9 @@
             <a href="#bfc" class="footerLink"> BassFaceCollective</a>
         </div>
     </footer>
+
+    <!-- My Javascript -->
+    <script src="js/BackToTop.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
