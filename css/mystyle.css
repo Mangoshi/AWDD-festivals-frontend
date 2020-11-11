@@ -1,0 +1,222 @@
+@import "customColours.css";
+@import "fonts.css";
+
+:root {
+    --blue-engie: #00aaff;
+    --blue-corporate: #009de9;
+    --white: #ffffff;
+    --black: #000000;
+    --gradient-primary: #0af - #23d2b5;
+    --green-java: #6ed2b1;
+    --orange-crusta: #f78a31;
+    --purple: #1f106d;
+    --red-mandy: #e74a50;
+    --yellow-bright-sun: #fbdb3c;
+    --alertGreen: #009934;
+    --alertOrange: #e07602;
+    --alertRed: #cc0033;
+    --blue-bigstone: #0f1e29;
+    --blue-allports: #0b74c0;
+    --blue-rhino: #2b485c;
+    --blue-venice: #005288;
+    --cerise: #e62b87;
+    --green-fun: #69af23;
+    --green-pine: #007873;
+    --green-riogrande: #becd00;
+    --violet-eggplant: #910f7d;
+    --violet: #552382;
+    --yellow: #faca08;
+}
+
+h2{
+    text-align: center;
+}
+
+.myRow{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.myJumbotron{
+    height: auto;
+    margin-bottom: 0px;
+    padding-top: 2rem;
+}
+
+.myHero{
+    height: 500px;
+    background-image: url(../img/concertHero.jpg);
+    background-position-y: 50%;
+    background-size: cover;
+    animation: slide 10s alternate infinite;
+    overflow: hidden;
+}
+
+@keyframes slide {
+    0%{
+    transform: translate(-20vw, 0px);
+    }
+    100%{
+    transform: translate(0vh, 0px);
+    }
+}
+
+.myHeroMask{
+    mask-image: url(../img/triangles.svg);
+    mask-repeat: no-repeat;
+    overflow: hidden;
+    scale: 130%;
+    translate: 15vw 70px;
+}
+
+.heroText{
+    font-size: 80px;
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+    translate: 25vw 30px;
+}
+
+.turntableArm{
+    position: absolute;
+    z-index: 1;
+    scale: 45%;
+    /* RIGHT SIDE? */
+    translate: 70px 45px;
+    rotate: -2deg;
+    /* LEFT SIDE? */
+    /*
+    translate: -90px 25px;
+    transform: scaleX(-1);
+    rotate: -20deg; 
+    */
+    pointer-events:none;
+}
+
+.heroCardBG{
+    top: 80px;
+    width: 270px;
+    height: 363px;
+    background-image: url(../img/redpaint.jpg);
+    background-position: 500px 500px;
+}
+
+.heroCard{
+    margin: 10px;
+    background-color: var(--white);
+    height: 343px;
+}
+
+.heroCardText{
+    user-select: none;
+    color: var(--black);
+    margin-top: 10px;
+}
+
+.heroCardTextHighlight{
+    text-shadow: var(--red-mandy) 1px 2px 3px;
+    transition: ease-in-out 0.25s;
+}
+
+.heroCardTextHighlight:hover{
+    text-shadow: var(--red-mandy) 1px 2px 3px;
+    font-size: 110%;
+    transition: ease-in-out 0.25s;
+}
+
+.vinylHero{
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+    transition: transform 999s 999s linear;
+}
+
+/* @keyframes rotation-clockwise {
+    from {
+    transform: rotate(0);
+    }
+    to {
+    transform: rotate(359deg);
+    }
+} */
+
+.vinylHero:hover{
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+    transform: rotate(10000deg);
+    transition: transform 50s linear;
+}
+
+
+.redButton{
+    margin: 0px 5px;
+    background: var(--red-mandy);
+    border-color: var(--red-mandy);
+    border-width: 3px;
+}
+
+.redButton:hover{
+    background: var(--yellow-bright-sun);
+    border-color: var(--yellow);
+    color: var(--black);
+}
+
+.greyButton{
+    margin: 0px 5px;
+    background: var(--black);
+    border-color: var(--black);
+}
+
+.greyButton:hover{
+    background: var(--yellow);
+    border-color: var(--yellow);
+    color: var(--black);
+}
+
+.myNavLink:link{
+    color: white;
+}
+
+.myNavLink:visited{
+    color: #fbdb3c;
+}
+
+.myNavLink:hover{
+    color: #6ed2b1;
+}
+
+.myNavLink:active{
+    color: #cc0033;
+}
+
+.myFluidContainer{
+    /* background-color: #fff; */
+}
+
+.cardImagePortrait{
+    height: 200px;
+    object-fit: cover;
+}
+
+.cardImageLandscape{
+    height: 200px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.imageCard{
+    max-width: 100%;
+}
+
+.rowHeading{
+    text-align: left;
+}
+
+@media (max-width: 991.98px) {
+
+    .myHeroMask{
+        translate: 50vw, 50vh;
+    }
+
+}
