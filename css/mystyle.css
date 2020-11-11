@@ -2,6 +2,7 @@
 @import "fonts.css";
 
 :root {
+    /* ENGIE PALETTE */
     --blue-engie: #00aaff;
     --blue-corporate: #009de9;
     --white: #ffffff;
@@ -26,6 +27,13 @@
     --violet-eggplant: #910f7d;
     --violet: #552382;
     --yellow: #faca08;
+
+    /* MY PALETTE */
+    --light-grey: #f8f9fa;
+}
+
+body{
+    background-color: var(--light-grey);
 }
 
 h2{
@@ -38,9 +46,9 @@ h2{
 }
 
 .myJumbotron{
-    height: auto;
-    margin-bottom: 0px;
+    margin: 0 !important;
     padding-top: 2rem;
+    /* margin-top: 180px; */
 }
 
 .myHero{
@@ -174,24 +182,16 @@ h2{
     color: var(--black);
 }
 
-.myNavLink:link{
-    color: white;
-}
-
-.myNavLink:visited{
-    color: #fbdb3c;
-}
-
-.myNavLink:hover{
-    color: #6ed2b1;
-}
-
-.myNavLink:active{
-    color: #cc0033;
-}
-
 .myFluidContainer{
     /* background-color: #fff; */
+}
+
+.myFestivals{
+    margin-top: 80px;
+}
+
+.myCard{
+    
 }
 
 .cardImagePortrait{
@@ -211,6 +211,28 @@ h2{
 
 .rowHeading{
     text-align: left;
+}
+
+/* LINK COLOURS */
+
+.myNavLink:link{
+    color: white;
+}
+
+.myNavLink:visited{
+    color: #fbdb3c;
+}
+
+.myNavLink:hover{
+    color: #6ed2b1;
+}
+
+.myNavLink:active{
+    color: #cc0033;
+}
+
+.footerLink{
+    color: var(-)
 }
 
 @media (max-width: 991.98px) {

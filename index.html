@@ -18,7 +18,7 @@
     </head>
     <body class="black">
     <header>
-        <nav class="fixed-top">
+        <!-- <nav class="fixed-top">
             <div class="collapse bg-dark" id="navbarHeader">
                 <div class="container">
                     <div class="row">
@@ -53,11 +53,39 @@
                     </button>
                 </div>
             </div>
+        </nav> -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">UI Kit Page</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mx-auto order-0">
+                <a href="#" class="navbar-brand"><img src="img/vinyl.png" style="padding-right: 10px; padding-bottom: 2px;"><strong class="lato-light">BassFace.Hz</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Register</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main role="main">
-        <section class="jumbotron myJumbotron mt-5">
-            <div class="container-fluid myFluidContainer d-none d-lg-block">
+        <section class="jumbotron myJumbotron mt-5 d-none d-lg-block">
+            <div class="container-fluid myFluidContainer">
                 <div class="row">
                     <div class="col-lg-8 col-md-12 col-sm-12">
                         <h1 class="lato-regular heroText d-none d-lg-block">The <span class="lato-bold">Bass</span><br>In your <span class="lato-bold">Face</span></h1>
@@ -79,20 +107,25 @@
                 </div>
             </div>
         </section>
-        <div class="bg-light py-2">
+        <div class="bg-light py-2 myFestivals">
             <div class="container">
                 <h2 class="rowHeading">Most Popular Festivals</h2>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                                <h3 class="lato-regular align-self-center">Party</h3>
+                        <div class="card myCard mb-4 shadow-sm">
+                                <a href="#" class="lato-light align-self-center">BassTown Returns</a>
                                 <img src="img/firebreatherPortrait.jpg" class="cardImagePortrait">
                             <div class="card-body">
                                 <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, repudiandae.
+                                    Lorem ipsum dolor sit amet.
                                 </p>
+                                <small class="card-text">Start Date: <span class="text-muted">24/07/21</span></small>
+                                <br>
+                                <small class="card-text">Tickets Left: <span class="text-muted">247</span></small>
+                                <br>
+                                <small class="card-text">Tickets Left: <span class="text-muted">247</span></small>
                             </div>
-                                <div class="d-flex justify-content-between align-self-center">
+                                <div class="d-flex justify-content-between align-self-center m-2">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-sn btn-outline-secondary">VIEW</a>
                                         <button type="button" class="btn btn-sn btn-outline-secondary">EDIT</a>
@@ -101,15 +134,15 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                                <h3 class="lato-regular align-self-center">All</h3>
+                        <div class="card myCard mb-4 shadow-sm">
+                                <h4 class="lato-light align-self-center">Electric Avenue</h4>
                                 <img src="img/confettiPortrait.jpg" class="cardImagePortrait">
                             <div class="card-body">
                                 <p class="card-text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, repudiandae.
                                 </p>
                             </div>
-                                <div class="d-flex justify-content-between align-self-center">
+                                <div class="d-flex justify-content-between align-self-center m-2">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-sn btn-outline-secondary">VIEW</a>
                                         <button type="button" class="btn btn-sn btn-outline-secondary">EDIT</a>
@@ -118,15 +151,15 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm imageCard">
-                                <h3 class="lato-regular align-self-center">Day</h3>
+                        <div class="card myCard mb-4 shadow-sm imageCard">
+                                <h4 class="lato-light align-self-center">DnB Arena 2021</h4>
                                 <img src="img/rigPortrait.jpg" class="cardImagePortrait">
                             <div class="card-body">
                                 <p class="card-text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, repudiandae.
                                 </p>
                             </div>
-                                <div class="d-flex justify-content-between align-self-center">
+                                <div class="d-flex justify-content-between align-self-center m-2">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-sn btn-outline-secondary">VIEW</a>
                                         <button type="button" class="btn btn-sn btn-outline-secondary">EDIT</a>
@@ -137,15 +170,15 @@
                 </div>
                 <div class="row">
                     <div class="col-md-8">
-                        <div class="card mb-4 shadow-sm">
-                                <h3 class="lato-regular align-self-center">Bass</h3>
+                        <div class="card myCard mb-4 shadow-sm">
+                                <h4 class="lato-light align-self-center">SeshOn 2021</h4>
                                 <img src="img/vibinLandscape.jpg" class="cardImageLandscape">
                             <div class="card-body">
                                 <p class="card-text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, repudiandae.
                                 </p>
                             </div>
-                                <div class="d-flex justify-content-between align-self-center">
+                                <div class="d-flex justify-content-between align-self-center m-2">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-sn btn-outline-secondary">VIEW</a>
                                         <button type="button" class="btn btn-sn btn-outline-secondary">EDIT</a>
@@ -154,15 +187,15 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                                <h3 class="lato-regular align-self-center">Face</h3>
+                        <div class="card myCard mb-4 shadow-sm">
+                                <h4 class="lato-light align-self-center">Techno & Cans</h4>
                                 <img src="img/confettiPortrait.jpg" class="cardImagePortrait">
                             <div class="card-body">
                                 <p class="card-text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, repudiandae.
                                 </p>
                             </div>
-                                <div class="d-flex justify-content-between align-self-center">
+                                <div class="d-flex justify-content-between align-self-center m-2">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-sn btn-outline-secondary">VIEW</a>
                                         <button type="button" class="btn btn-sn btn-outline-secondary">EDIT</a>
@@ -174,7 +207,7 @@
                 <h2 class="rowHeading">Most Recent Festivals</h2>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
+                        <div class="card myCard mb-4 shadow-sm">
                                 <h3 class="lato-regular align-self-center">Party</h3>
                                 <img src="img/firebreatherPortrait.jpg" class="cardImagePortrait">
                             <div class="card-body">
@@ -182,7 +215,7 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, repudiandae.
                                 </p>
                             </div>
-                                <div class="d-flex justify-content-between align-self-center">
+                                <div class="d-flex justify-content-between align-self-center m-2">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-sn btn-outline-secondary">VIEW</a>
                                         <button type="button" class="btn btn-sn btn-outline-secondary">EDIT</a>
@@ -191,7 +224,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
+                        <div class="card myCard mb-4 shadow-sm">
                                 <h3 class="lato-regular align-self-center">All</h3>
                                 <img src="img/confettiPortrait.jpg" class="cardImagePortrait">
                             <div class="card-body">
@@ -199,7 +232,7 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, repudiandae.
                                 </p>
                             </div>
-                                <div class="d-flex justify-content-between align-self-center">
+                                <div class="d-flex justify-content-between align-self-center m-2">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-sn btn-outline-secondary">VIEW</a>
                                         <button type="button" class="btn btn-sn btn-outline-secondary">EDIT</a>
@@ -208,7 +241,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm imageCard">
+                        <div class="card myCard mb-4 shadow-sm imageCard">
                                 <h3 class="lato-regular align-self-center">Day</h3>
                                 <img src="img/rigPortrait.jpg" class="cardImagePortrait">
                             <div class="card-body">
@@ -216,7 +249,7 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, repudiandae.
                                 </p>
                             </div>
-                                <div class="d-flex justify-content-between align-self-center">
+                                <div class="d-flex justify-content-between align-self-center m-2">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-sn btn-outline-secondary">VIEW</a>
                                         <button type="button" class="btn btn-sn btn-outline-secondary">EDIT</a>
@@ -288,28 +321,28 @@
             </div>
         </div>
     </main>
-    <footer class="page-footer font-small blue pt-4">
-        <div class="container-fluid text-center text-md-left">
+    <footer class="page-footer font-small blue pt-4 bg-dark">
+        <div class="container-fluid text-center text-md-left text-light">
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
-                    <h5 class="text-uppercase lato-black">BassFace.Hz</h5>
+                    <h5 class="text-uppercase lato-black"><img src="img/vinyl.png" class="pr-2">BassFace.Hz</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt corporis ipsam ipsum magni, amet numquam similique earum odit tempore quasi.</p>
                 </div>
                 <hr class="clearfix w-100 d-md-none pb-3">
                 <div class="col-md-3 mb-md-0 mb-3">
-                    <h5 class="text-uppercase">lato-regular</h5>
+                    <h5 class="text-uppercase lato-regular">Links</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!">One link</a>
+                            <a href="#!" class="footerLink">One link</a>
                         </li>
                         <li>
-                            <a href="#!">Two link</a>
+                            <a href="#!" class="footerLink">Two link</a>
                         </li>
                         <li>
-                            <a href="#!">Three link</a>
+                            <a href="#!" class="footerLink">Three link</a>
                         </li>
                         <li>
-                            <a href="#!">Four</a>
+                            <a href="#!" class="footerLink">Four</a>
                         </li>
                     </ul>
                 </div>
@@ -329,7 +362,7 @@
             </div>
         </div>
         <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="#bfc"> BassFaceCollective</a>
+            <a href="#bfc" class="footerLink"> BassFaceCollective</a>
         </div>
     </footer>
 
