@@ -104,8 +104,12 @@ h2{
     font-size: 80px;
     position: absolute;
     z-index: 1;
-    pointer-events: none;
+    user-select: none;
     color: var(--white);
+}
+
+.heroHover:hover{
+    color: var(--alertRed);
 }
 
 .turntableArm{
@@ -146,6 +150,15 @@ h2{
     text-shadow: var(--red-mandy) 1px 2px 3px;
     font-size: 110%;
     transition: ease-in-out 0.25s;
+}
+
+.heroCardLink{
+    color: var(--black);
+}
+
+.heroCardLink:hover{
+    color: var(--black);
+    text-decoration: none;
 }
 
 .vinylHero{
@@ -212,6 +225,16 @@ h2{
     
 }
 
+.cardTitle{
+    font-size: 24px;
+    color: var(--black);
+}
+
+.cardTitle:hover{
+    color: var(--blue-engie);
+    text-decoration: none;
+}
+
 .cardImagePortrait{
     height: 200px;
     object-fit: cover;
@@ -230,6 +253,15 @@ h2{
 .rowHeading{
     text-align: left;
 }
+
+/* TABLES */
+
+.ticketStatus{
+    font-size: 16px;
+    width: 120px;
+}
+
+/* BUTTONS */
 
 #toTopBtn {
     display: none; /* Hidden by default */
@@ -253,6 +285,10 @@ h2{
     color: var(--orange-crusta);
 }
 
+.purchaseButton{
+    font-size: 18px;
+}
+
 /* LINK COLOURS */
 
 .myNavLink:link{
@@ -271,8 +307,9 @@ h2{
     color: #cc0033;
 }
 
-.footerLink{
-    color: var(-)
+.footerLink:hover{
+    color: var(--white) !important;
+    text-decoration: none;
 }
 
 /* MEDIA QUERIES */
