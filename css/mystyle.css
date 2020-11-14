@@ -54,6 +54,16 @@ h2{
     transition: 1s;
 }
 
+.myToggler{
+    border: none;
+    outline: none;
+}
+
+.myToggler:focus{
+    border: none;
+    outline: none;
+}
+
 
 /* JUMBOTRON / HERO */
 
@@ -102,7 +112,6 @@ h2{
 .heroText{
     margin-top: 60px;
     margin-left: 40%;
-    font-size: 80px;
     position: absolute;
     z-index: 1;
     user-select: none;
@@ -259,6 +268,11 @@ h2{
 
 .rowHeading{
     text-align: left;
+    user-select: none;
+}
+
+.rMargin{
+    margin-top: -28px;
 }
 
 /* TABLES */
@@ -279,7 +293,7 @@ h2{
 }
 
 .tableHeadLink:hover{
-    color: var(--yellow);
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -288,7 +302,7 @@ h2{
 }
 
 .tableHeadLink:visited:hover{
-    color: var(--yellow);
+    color: var(--white);
 }
 
 .tableLink{
@@ -394,7 +408,7 @@ h2{
 /* FOOTER STUFF */
 
 .subscribeContainer{
-    float: left;
+    align-items: start;
 }
 
 .subscribeInput{
@@ -445,7 +459,13 @@ h2{
     .myHeroMask{
         margin: 0;
         mask-size: 50%;
-        mask-position: center !important;
+        -webkit-mask-size: 50%;
+        mask-position: center;
+        -webkit-mask-position: center;
+    }
+
+    .subscribeContainer{
+        align-items: center;
     }
 
 }
