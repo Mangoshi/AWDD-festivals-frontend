@@ -36,6 +36,7 @@
 body, html{
     background-color: var(--light-grey);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 h2{
@@ -213,31 +214,37 @@ h2{
 
 /* MAIN */
 
-.myFluidContainer{
-    /* background-color: #fff; */
-}
-
 .myFestivals{
     margin-top: 80px;
 }
 
 .myCard{
-    
+    overflow: hidden;
 }
 
 .cardTitle{
     font-size: 24px;
-    color: var(--black);
+    color: var(--white);
+    background-color: var(--blue-bigstone);
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
 }
 
 .cardTitle:hover{
-    color: var(--blue-engie);
+    font-size: 26px;
+    background-color: var(--black);
+}
+
+.cardTitle:hover{
+    color: var(--yellow);
     text-decoration: none;
 }
 
 .cardImagePortrait{
     height: 200px;
     object-fit: cover;
+    transition: 0.5s;
 }
 
 .cardImageLandscape{
@@ -255,6 +262,53 @@ h2{
 }
 
 /* TABLES */
+
+.tableHead{
+    background-color: var(--blue-bigstone);
+    color: var(--white);
+}
+
+.tableHeadCol:hover{
+    background-color: var(--blue-rhino);
+    color: var(--yellow);
+}
+
+
+.tableHeadLink{
+    color: var(--white);
+}
+
+.tableHeadLink:hover{
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+.tableHeadLink:visited{
+    color: var(--white);
+}
+
+.tableHeadLink:visited:hover{
+    color: var(--yellow);
+}
+
+.tableLink{
+    color: black;
+}
+
+.tableLink:hover{
+    color: var(--blue-allports);
+    text-decoration: none;
+}
+
+.tableLink:visited{
+    color: var(--blue-rhino);
+    text-decoration: none;
+}
+
+.tableLink:visited:hover{
+    color: var(--blue-allports);
+    text-decoration: none;
+}
 
 .ticketStatus{
     font-size: 16px;
@@ -287,6 +341,69 @@ h2{
 
 .purchaseButton{
     font-size: 18px;
+    background-color: var(--green-fun);
+}
+
+.purchaseButton:hover{
+    font-size: 18px;
+    background-color: var(--green-riogrande);
+}
+
+.adminButtonGroup{
+    float: right;
+}
+
+.editButton{
+    font-size: 18px;
+    background-color: var(--blue-corporate);
+}
+
+.editButton:hover{
+    font-size: 18px;
+    background-color: var(--black);
+}
+
+.addButton{
+    font-size: 18px;
+    background-color: var(--green-fun);
+}
+
+.addButton:hover{
+    font-size: 18px;
+    background-color: var(--black);
+}
+
+.removeButton{
+    font-size: 18px;
+    background-color: var(--alertRed);
+}
+
+.removeButton:hover{
+    font-size: 18px;
+    background-color: var(--black);
+}
+
+.myBtn{
+    background-color: var(--green-fun);
+}
+
+.myBtn:hover{
+    background-color: var(--green-riogrande);
+}
+
+/* FOOTER STUFF */
+
+.subscribeContainer{
+    float: left;
+}
+
+.subscribeInput{
+    width: 100%;
+}
+
+.subscribeBtn{
+    width: 190px;
+    height: 35px;
 }
 
 /* LINK COLOURS */
@@ -307,8 +424,13 @@ h2{
     color: #cc0033;
 }
 
+.footerLink{
+    color: var(--blue-engie) !important;
+    text-decoration: none;
+}
+
 .footerLink:hover{
-    color: var(--white) !important;
+    color: var(--yellow) !important;
     text-decoration: none;
 }
 
@@ -316,8 +438,14 @@ h2{
 
 @media (max-width: 991.98px) {
 
+    .myJumbotron{
+        height: auto;
+    }
+
     .myHeroMask{
-        translate: 50vw, 50vh;
+        margin: 0;
+        mask-size: 50%;
+        mask-position: center !important;
     }
 
 }

@@ -16,52 +16,16 @@
 
     <title>BassFace.Hz</title>
     </head>
-    <body class="black">
+    <body class="black lato-regular">
     <header>
-        <!-- <nav class="fixed-top">
-            <div class="collapse bg-dark" id="navbarHeader">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8 col-md-7">
-                            <h4 class="text-white">About</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente incidunt eum et voluptatem placeat distinctio magnam pariatur magni similique iusto.</p>
-                        </div>
-                        <div class="col-sm-4 offset-md-1">
-                            <h4 class="text-white">Contact</h4>
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="text-muted">Follow on <span class="text-white">Twitter</span></a></li>
-                                <li><a href="#" class="text-muted">Like on <span class="text-white">Facebook</span></a></li>
-                                <li><a href="#" class="text-muted">Send me an <span class="text-white">email</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="navbar navbar-dark bg-dark shadow-sm">
-                <div class="container-fluid">
-                    <a href="#" class="navbar-brand"><img src="img/vinyl.png" style="padding-right: 10px; padding-bottom: 2px;"><strong class="lato-light">BassFace.Hz</strong></a>
-                <div class="leftLinks d-flex">
-                    <a href="#1" class="nav-link myNavLink">Home</a>
-                    <a href="#2" class="nav-link myNavLink">UI Kit</a>
-                </div>
-                <div class="rightLinks d-flex">
-                    <a href="#3" class="nav-link myNavLink">Log In</a>
-                    <a href="#4" class="nav-link myNavLink">Register</a>
-                </div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-            </div>
-        </nav> -->
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">UI Kit Page</a>
+                        <a class="nav-link" href="kitpage.html">UI Kit Page</a>
                     </li>
                 </ul>
             </div>
@@ -100,7 +64,7 @@
                                 <p class="lead lato-bold text-center heroCardText">You wanna feel that <a href="#festivalBrowser" class="heroCardLink"><span class="heroCardTextHighlight">rumble?</span></a></p>
                                 <img src="img/bigVinyl.png" class="vinylHero align-self-center">
                                 <a href="#festivalBrowser" class="btn btn-primary redButton">Festivals</a>
-                                <a href="#" class="btn btn-secondary greyButton">UI Kit Page</a>
+                                <a href="kitpage.html" class="btn btn-secondary greyButton">UI Kit Page</a>
                             </div>
                         </div>
                     </div>
@@ -319,77 +283,77 @@
                 </div>
                 <h2 class="rowHeading" id="festivalBrowser">Festival Browser</h2>
                 <div class="row">
-                    <div class="container-fluid">
+                    <div class="container-fluid table-responsive">
                         <table class="table table-hover">
-                            <thead>
+                            <thead class="tableHead">
                             <tr>
-                                <th scope="col">Festival</th>
-                                <th scope="col">Date</th>
-                                <th scope="col">Type</th>
-                                <th scope="col">Size</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Status</th>
-                                <th scope="col">Buy</th>
+                                <th scope="col" class="tableHeadCol"><a href="#sort1" class="tableHeadLink">Festival</a></th>
+                                <th scope="col" class="tableHeadCol"><a href="#sort2" class="tableHeadLink">Date</a></th>
+                                <th scope="col" class="tableHeadCol"><a href="#sort3" class="tableHeadLink">Type</a></th>
+                                <th scope="col" class="tableHeadCol"><a href="#sort4" class="tableHeadLink">Size</a></th>
+                                <th scope="col" class="tableHeadCol"><a href="#sort5" class="tableHeadLink">Price</a></th>
+                                <th scope="col" class="tableHeadCol"><a href="#sort6" class="tableHeadLink">Status</a></th>
+                                <th scope="col" class="tableHeadLink tableHeadCol" style="user-select: none;">Buy</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <th scope="row">DnB Arena 2021</th>
+                                <th scope="row"><a href="#festival1" class="tableLink">DnB Arena 2021</a></th>
                                 <td>24/07/21</td>
                                 <td>DnB</td>
                                 <td>10,0000</td>
                                 <td>€60</td>
                                 <td class="alert-info ticketStatus lato-bold" id="ticketStatus">Available</td>
-                                <td><button class="btn btn-success purchaseButton" id="purchaseButton">+</td>
+                                <td><button class="btn text-white purchaseButton" id="purchaseButton">+</td>
                             </tr>
                             <tr>
-                                <th scope="row">Techno & Cans</th>
+                                <th scope="row"><a href="#festival2" class="tableLink">Techno & Cans</a></th>
                                 <td>24/07/21</td>
                                 <td>Techno</td>
                                 <td>3,000</td>
                                 <td>€40</td>
                                 <td class="alert-danger ticketStatus lato-bold" id="ticketStatus">Sold Out</td>
-                                <td><button class="btn btn-success purchaseButton" id="purchaseButton">+</td>
+                                <td><button class="btn text-white purchaseButton" id="purchaseButton">+</td>
 
                             </tr>
                             <tr>
-                                <th scope="row">BassFace Official</th>
+                                <th scope="row"><a href="#festival3" class="tableLink">BassFace Official</a></th>
                                 <td>24/07/21</td>
                                 <td>140</td>
                                 <td>20,000</td>
                                 <td>€80</td>
                                 <td class="alert-warning ticketStatus lato-bold" id="ticketStatus">Nearly Gone!</td>
-                                <td><button class="btn btn-success purchaseButton" id="purchaseButton">+</td>
+                                <td><button class="btn text-white purchaseButton" id="purchaseButton">+</td>
 
                             </tr>
                             <tr>
-                                <th scope="row">SeshOn 2021</th>
+                                <th scope="row"><a href="#festival4" class="tableLink">SeshOn 2021</a></th>
                                 <td>24/07/21</td>
                                 <td>Various</td>
                                 <td>5,000</td>
                                 <td>€100</td>
                                 <td class="alert-danger ticketStatus lato-bold" id="ticketStatus">Sold Out</td>
-                                <td><button class="btn btn-success purchaseButton" id="purchaseButton">+</td>
+                                <td><button class="btn text-white purchaseButton" id="purchaseButton">+</td>
 
                             </tr>
                             <tr>
-                                <th scope="row">BassTown Returns</th>
+                                <th scope="row"><a href="#festival5" class="tableLink">BassTown Returns</a></th>
                                 <td>24/07/21</td>
                                 <td>Jungle</td>
                                 <td>4,500</td>
                                 <td>€60</td>
                                 <td class="alert-warning ticketStatus lato-bold" id="ticketStatus">Nearly Gone!</td>
-                                <td><button class="btn btn-success purchaseButton" id="purchaseButton">+</td>
+                                <td><button class="btn text-white purchaseButton" id="purchaseButton">+</td>
 
                             </tr>
                             <tr>
-                                <th scope="row">Electric Avenue</th>
+                                <th scope="row"><a href="#festival6" class="tableLink">Electric Avenue</a></th>
                                 <td>24/07/21</td>
                                 <td>Electronica</td>
                                 <td>10,000</td>
                                 <td>€75</td>
                                 <td class="alert-danger ticketStatus lato-bold" id="ticketStatus">Sold Out</td>
-                                <td><button class="btn btn-success purchaseButton" id="purchaseButton">+</td>
+                                <td><button class="btn text-white purchaseButton" id="purchaseButton">+</td>
                             </tr>
                             </tbody>
                         </table>
@@ -397,7 +361,7 @@
                 </div>
             </div>
         </div>
-        <button onclick="topFunction()" id="toTopBtn" title="Go Back To Top">Back To Top &#9757;</button>
+        <button onclick="topFunction()" id="toTopBtn" title="Go Back To Top">Back To Top 👆</button>
     </main>
     <footer class="page-footer font-small blue pt-4 bg-dark">
         <div class="container-fluid text-center text-md-left text-light">
@@ -430,9 +394,9 @@
                     <h5 class="text-uppercase lato-regular">Contact</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <div class="input-append newsletter-box text-center">
-                                <input type="text" class="full text-center" placeholder="Email ">
-                                <button class="bg-light border-dark" type="button"> Subscribe <i class="fa fa-long-arrow-right"> </i> </button>
+                            <div class="input-append newsletter-box text-center subscribeContainer">
+                                <input type="text" class="full text-center" placeholder="Email "><br>
+                                <button class="bg-light border-dark lato-bold subscribeBtn" type="button">👆 Subscribe</button>
                             </div>
                         </li>
                     </ul>
