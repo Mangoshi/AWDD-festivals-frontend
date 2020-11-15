@@ -365,11 +365,22 @@ h2{
 
 .adminButtonGroup{
     float: right;
+    margin: 0px 0px 0px 15px;
+}
+
+.viewButton{
+    font-size: 18px;
+    background-color: var(--blue-bigstone);
+}
+
+.viewButton:hover{
+    font-size: 18px;
+    background-color: var(--black);
 }
 
 .editButton{
     font-size: 18px;
-    background-color: var(--blue-corporate);
+    background-color: var(--blue-rhino);
 }
 
 .editButton:hover{
@@ -379,7 +390,7 @@ h2{
 
 .addButton{
     font-size: 18px;
-    background-color: var(--green-fun);
+    background-color: var(--green-pine);
 }
 
 .addButton:hover{
@@ -389,7 +400,7 @@ h2{
 
 .removeButton{
     font-size: 18px;
-    background-color: var(--alertRed);
+    background-color: var(--red-mandy);
 }
 
 .removeButton:hover{
