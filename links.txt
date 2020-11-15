@@ -1,3 +1,9 @@
+GitHub repo:
+https://github.com/Mangoshi/AWDD-festivals-frontend
+
+GitHub Pages hosted site:
+https://mangoshi.github.io/AWDD-festivals-frontend/
+
 Invision Moodboard: 
 https://iadt.invisionapp.com/board/AWDD-ckfp9hwyl07mw18v8f4tfsr2s
 
